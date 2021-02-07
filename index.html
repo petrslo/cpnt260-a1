@@ -3,33 +3,117 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Club</title>
+    <title>Cryptopedia</title>
     <!--<link rel="stylesheet" href="style.css">-->
   <style>
-    .body {
-      margin:auto;
+    * {
+      font-family: sans-serif; 
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      margin:0;
+
     }
     header {
-      color: blue;
+      color: whitesmoke;
       font-size: 6em;
-      
+      background-color:rgb(7, 98, 189);
+      text-align: center;
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      justify-content:space-between; 
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline;
+    }
+    li a {
+      display: block;
+      text-decoration: none;
+      font-size: 2em;
+      padding: 40px 81px;
+      text-align: center;
+      color:whitesmoke;
+      background-color:indigo;
+      border-right: 2px solid #bbb;
+    }
+    li a:hover {
+      background-color: rgb(123, 41, 182);
+    }
+    footer {
+      display: flex;
+      align-items: flex-end;
+      background-color: indigo;
+      color: whitesmoke;
+    }
+    
+    /*Cards CSS*/
+
+    .card-row{
+      display: flex;
+      flex-direction:row;
+      justify-content:space-around;      
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card-body{
+      padding:20px 10px;
+      border-radius: 50%;
+      border-width: 2px;
+      text-align: center;
     }
   </style>
   </head>
   <body>
     <header class>
-      <p>Cryptocurrency Club</p>
+      <p>Cryptopedia</p>
     </header>
     <nav>
-      <ul>  
+      <ul class="container">  
         <li><a href="https://petrslo.github.io/cpnt260-a1/">Home</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="https://github.com/petrslo">Contact</a></li>
+        <li><a href="#">Link</a></li>
         <li><a href="#">Login</a></li>
         <li><a href="#">Register</a></li>
-        <li><a href="#">Link</a></li>
       </ul>
     </nav>
+    <div class="card-row">
+
+      <div class="card">
+        <a href="#"></a>
+        <div class="header">
+          <h1>Bitcoin</h1>
+        <div class="card-body">
+       
+        </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#"></a>
+          <h1>Ethereum</h1>
+        <div class="card-body">
+          
+        </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#"></a>
+        <div class="header">
+          <h1>Cardano</h1>
+        <div class="card-body">
+
+        </div>
+        </div>
+      </div>
+
+    </div>
     <main>
       <h1>Cryptocurrency</h1>
         <p>A cryptocurrency (or crypto currency or crypto for short) is a digital asset designed to work as a medium of exchange wherein individual coin ownership records are stored in a ledger existing in a form of computerized database using strong cryptography to secure transaction records, to control the creation of additional coins, and to verify the transfer of coin ownership.[1][2] It typically does not exist in physical form (like paper money) and is typically not issued by a central authority. Cryptocurrencies typically use decentralized control as opposed to centralized digital currency and central banking systems.[3] When a cryptocurrency is minted or created prior to issuance or issued by a single issuer, it is generally considered centralized. When implemented with decentralized control, each cryptocurrency works through distributed ledger technology, typically a blockchain, that serves as a public financial transaction database.[4]</p>
@@ -68,8 +152,9 @@
         <p>Significant rallies across altcoin markets are often referred to as an "altseason".[29][30]</p>
 
     </main>
-    <footer>
-      <p>© 2021 Petr Slobodcicov. MIT License. </p>
-    </footer>
-  </body>
+   
+  </body> 
+  <footer>
+    <p>© 2021 Petr Slobodcicov. MIT License. </p>
+  </footer>
 </html>
